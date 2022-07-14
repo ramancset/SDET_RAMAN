@@ -138,9 +138,9 @@ public class VtigerTestCase3 {
 	
 		util.movelement(homePage.getSignoutimg());
 		util.movelement(homePage.getSignoutlink());
-		Thread.sleep(8000);
-		//util.movelement(homePage.getSignoutimg());
-		//util.movelement(homePage.getSignoutlink());
+		Thread.sleep(5000);
+		
+		
 		System.out.println("program complite");
 
 
