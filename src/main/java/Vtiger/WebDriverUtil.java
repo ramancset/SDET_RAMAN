@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverUtil 
 {
@@ -55,6 +57,7 @@ public class WebDriverUtil
 	public void movelement(WebElement element) {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click().build().perform();
+		
 	}
 
 	public void Browserclose() {
@@ -64,6 +67,9 @@ public class WebDriverUtil
 	{
 		Alert a = driver.switchTo().alert();
 	}
-	
+	public void waitankclick(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+	}
 
 }

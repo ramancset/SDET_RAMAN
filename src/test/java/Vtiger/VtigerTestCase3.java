@@ -1,18 +1,11 @@
 package Vtiger;
 
-import java.io.IOException;
-import java.time.Duration;
-import java.util.Random;
-
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-
+import com.PageObjectMode.CampSearchnow;
 import com.PageObjectMode.CampaignMainPage;
 import com.PageObjectMode.CreateCampaignImg;
 import com.PageObjectMode.HomePage;
@@ -69,72 +62,85 @@ public class VtigerTestCase3 {
 		//Click on More option in homePage
 		
 		HomePage homePage = new HomePage(driver);
-		homePage.getClickMoreText().click();
+		//homePage.getClickMoreText().click();
+		
 		
 		//Click on Campaigns option
 		
-		WebElement campaigns = homePage.getClickOnCampaigns();
+		
 		WebDriverUtil util = new WebDriverUtil(driver);
-		util.movelement(campaigns);
+		//WebElement campaigns = homePage.getClickOnCampaigns();
+		util.movelement(homePage.getClickMoreText());
+		
+		util.movelement(homePage.getClickOnCampaigns());
+		
+		Thread.sleep(4000);
+		
 		
 		//click Create Campaigns 
 		
 		CreateCampaignImg campaignImg = new CreateCampaignImg(driver);
 		campaignImg.getClickOnCreateCamp().click();
+		Thread.sleep(4000);
 		
 		//create new Campaigns
 		
 		NewCampCreate newCampCreate = new NewCampCreate(driver);
 		newCampCreate.getOrgtextfild().sendKeys(orgname);
-		
+		Thread.sleep(4000);
+	
 		WebElement campType = newCampCreate.getDropDownCampaType();
 		campType.click();
 		util.slectClass(campType, 3);
+		Thread.sleep(4000);
 		
 		// Click on Save option
 		
 		newCampCreate.getClickOnSaveoption().click();
-		
-		//Click on More option in homePage
-		
-		
-		homePage.getClickMoreText().click();
+		Thread.sleep(4000);
 				
 		//Click on Campaigns option
 				
-		WebElement campaigns1 = homePage.getClickOnCampaigns();
-		util.movelement(campaigns1);
+		//WebElement campaigns1 = homePage.getClickOnCampaigns();
+		util.movelement(homePage.getClickMoreText());
+		util.movelement(homePage.getClickOnCampaigns());
+		Thread.sleep(4000);
 		
 		//Click on Campaign Search field
 		
 		CampaignMainPage campaignMainPage = new CampaignMainPage(driver);
-		campaignImg.getClickOnCreateCamp().sendKeys(orgname);
+		campaignMainPage.getSearchBox().sendKeys(orgname);
+		Thread.sleep(4000);
       
 		// Click on Campaign in field
 		
 		WebElement campNo = campaignMainPage.getCampNoDrop();
 		campNo.click();
-		util.slectClass(campNo, 1);
+		util.slectClass(campNo, 2);
+		Thread.sleep(4000);
 		
 		// click on Search option
+		CampSearchnow campSearchnow = new CampSearchnow(driver);
+		campSearchnow.getSearchoptionbox().click();
+		Thread.sleep(4000);
 		
+		//click on check box result
+		campSearchnow.getAfterSearchResult().click();
+		Thread.sleep(4000);
 		
+		//click on Delete button
+		campSearchnow.getClickOnDeleteOption().click();
+		Thread.sleep(4000);
 		
-		
-		driver.findElement(By.xpath(".//input[@name=\"search_text\"]")).sendKeys(name);
-		Thread.sleep(5000);
-		WebElement div = driver.findElement(By.xpath("(.//select[@id=\"bas_searchfield\"])[1]"));
-		div.click();
-		Select s = new Select(div);
-		s.selectByIndex(1);
-		driver.findElement(By.xpath(".//input[@class=\"crmbutton small create\"]")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//input[@name='selected_id']")).click();
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("(.//input[@class=\"crmbutton small delete\"])[1]")).click();
-		Thread.sleep(5000);
 		Alert a2 = driver.switchTo().alert();
 		a2.accept();
+		Thread.sleep(5000);
+	
+		util.movelement(homePage.getSignoutimg());
+		util.movelement(homePage.getSignoutlink());
+		Thread.sleep(8000);
+		//util.movelement(homePage.getSignoutimg());
+		//util.movelement(homePage.getSignoutlink());
 		System.out.println("program complite");
 
 

@@ -1,6 +1,7 @@
 package com.PageObjectMode;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,15 +26,7 @@ public class CampaignMainPage
 		return campNoDrop;
 	}
 	
-}
-	@FindBy(xpath=".//input[@value=\" Search Now \"]")
-	private WebDriver nowsearchbox;
-	public WebDriver getSearchnowbox() {
-		return nowsearchbox;
-	}
-	
-	
-	
+}	
 	
 	
 	

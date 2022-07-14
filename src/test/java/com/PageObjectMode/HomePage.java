@@ -48,7 +48,7 @@ public class HomePage
 	
 	//Click on Campaigns option
 	
-	@FindBy(xpath=".//a[text()='Campaigns']")
+	@FindBy(xpath=".//a[@name=\"Campaigns\"]")
 	private WebElement clickOnCampaigns;
 	public WebElement getClickOnCampaigns() {
 		return clickOnCampaigns;
