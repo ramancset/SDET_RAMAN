@@ -1,7 +1,7 @@
 package Vtiger;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.time.Duration;
 import java.util.Properties;
 
@@ -44,8 +44,7 @@ public class Property {
 		driver.get(url1);
 		String userName1= p.getProperty("username");
 		driver.findElement(By.xpath(".//input[@name=\"user_name\"]")).sendKeys(userName1);
-		//user.click();
-		//user.sendKeys("admin");
+		
 		Thread.sleep(5000);
 		WebElement password = driver.findElement(By.xpath(".//input[@name=\"user_password\"]"));
 		//password.click();

@@ -3,11 +3,17 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="JDBC.Practice.Reports">
+      <class name="com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest">
         <methods>
-          <include name="reportCreation"/>
+          <include name="dataBaseConnection"/>
+          <include name="afterSute"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="closeBrowser"/>
+          <include name="testScriptTest2"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- JDBC.Practice.Reports -->
+      </class> <!-- com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

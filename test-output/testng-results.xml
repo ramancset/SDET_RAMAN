@@ -1,17 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="8" total="13" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5131" started-at="2022-07-08T08:39:02Z" finished-at="2022-07-08T08:39:08Z">
+  <suite name="Suite" duration-ms="454080" started-at="2022-07-27T12:23:14Z" finished-at="2022-07-27T12:30:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5131" started-at="2022-07-08T08:39:02Z" finished-at="2022-07-08T08:39:08Z">
-      <class name="JDBC.Practice.Reports">
-        <test-method status="PASS" signature="reportCreation()[pri:0, instance:JDBC.Practice.Reports@210366b4]" name="reportCreation" duration-ms="5110" started-at="2022-07-08T14:09:02Z" finished-at="2022-07-08T14:09:08Z">
+    <test name="Test" duration-ms="454080" started-at="2022-07-27T12:23:14Z" finished-at="2022-07-27T12:30:48Z">
+      <class name="com.Vtiger.Tests.CreateContactAndSinoutTest">
+        <test-method status="PASS" signature="dataBaseConnection()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="dataBaseConnection" is-config="true" duration-ms="327" started-at="2022-07-27T17:53:14Z" finished-at="2022-07-27T17:53:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reportCreation -->
-      </class> <!-- JDBC.Practice.Reports -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- dataBaseConnection -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="beforeClass" is-config="true" duration-ms="6303" started-at="2022-07-27T17:53:14Z" finished-at="2022-07-27T17:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="beforeMethod" is-config="true" duration-ms="12875" started-at="2022-07-27T17:53:21Z" finished-at="2022-07-27T17:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testScript3Test()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="testScript3Test" duration-ms="50978" started-at="2022-07-27T17:53:33Z" finished-at="2022-07-27T17:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScript3Test -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="afterMethod" is-config="true" duration-ms="5314" started-at="2022-07-27T17:54:24Z" finished-at="2022-07-27T17:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="closeBrowser" is-config="true" duration-ms="4444" started-at="2022-07-27T17:54:30Z" finished-at="2022-07-27T17:54:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="afterSute()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="afterSute" is-config="true" duration-ms="0" started-at="2022-07-27T18:00:48Z" finished-at="2022-07-27T18:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSute -->
+      </class> <!-- com.Vtiger.Tests.CreateContactAndSinoutTest -->
+      <class name="com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="beforeClass" is-config="true" duration-ms="3017" started-at="2022-07-27T17:56:57Z" finished-at="2022-07-27T17:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="beforeMethod" is-config="true" duration-ms="11776" started-at="2022-07-27T17:57:00Z" finished-at="2022-07-27T17:57:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ContactsTestCaseTest()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="ContactsTestCaseTest" duration-ms="139044" started-at="2022-07-27T17:57:12Z" finished-at="2022-07-27T17:59:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactsTestCaseTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="afterMethod" is-config="true" duration-ms="5311" started-at="2022-07-27T17:59:31Z" finished-at="2022-07-27T17:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="closeBrowser" is-config="true" duration-ms="3961" started-at="2022-07-27T17:59:37Z" finished-at="2022-07-27T17:59:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest -->
+      <class name="com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="beforeClass" is-config="true" duration-ms="2990" started-at="2022-07-27T17:59:41Z" finished-at="2022-07-27T17:59:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="beforeMethod" is-config="true" duration-ms="10966" started-at="2022-07-27T17:59:44Z" finished-at="2022-07-27T17:59:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testScriptTest2()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="testScriptTest2" duration-ms="44530" started-at="2022-07-27T17:59:54Z" finished-at="2022-07-27T18:00:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScriptTest2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="afterMethod" is-config="true" duration-ms="5301" started-at="2022-07-27T18:00:39Z" finished-at="2022-07-27T18:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="closeBrowser" is-config="true" duration-ms="3721" started-at="2022-07-27T18:00:44Z" finished-at="2022-07-27T18:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest -->
+      <class name="com.Vtiger.Tests.CreateCampaignsAndDeleteTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="beforeClass" is-config="true" duration-ms="2907" started-at="2022-07-27T17:55:29Z" finished-at="2022-07-27T17:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="beforeMethod" is-config="true" duration-ms="11904" started-at="2022-07-27T17:55:32Z" finished-at="2022-07-27T17:55:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ScriptTest4Test()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="ScriptTest4Test" duration-ms="63872" started-at="2022-07-27T17:55:44Z" finished-at="2022-07-27T17:56:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScriptTest4Test -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="afterMethod" is-config="true" duration-ms="5327" started-at="2022-07-27T17:56:48Z" finished-at="2022-07-27T17:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="closeBrowser" is-config="true" duration-ms="4335" started-at="2022-07-27T17:56:53Z" finished-at="2022-07-27T17:56:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.Vtiger.Tests.CreateCampaignsAndDeleteTest -->
+      <class name="com.Vtiger.Tests.CreateOrganizationTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="beforeClass" is-config="true" duration-ms="3156" started-at="2022-07-27T17:54:34Z" finished-at="2022-07-27T17:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="beforeMethod" is-config="true" duration-ms="11781" started-at="2022-07-27T17:54:37Z" finished-at="2022-07-27T17:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestScriptTest1()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="TestScriptTest1" duration-ms="30221" started-at="2022-07-27T17:54:49Z" finished-at="2022-07-27T17:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScriptTest1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="afterMethod" is-config="true" duration-ms="5328" started-at="2022-07-27T17:55:19Z" finished-at="2022-07-27T17:55:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="closeBrowser" is-config="true" duration-ms="4425" started-at="2022-07-27T17:55:25Z" finished-at="2022-07-27T17:55:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.Vtiger.Tests.CreateOrganizationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

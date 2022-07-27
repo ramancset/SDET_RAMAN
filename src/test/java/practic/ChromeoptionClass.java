@@ -28,7 +28,7 @@ public class ChromeoptionClass {
 		options.merge(capabilities);
 		ChromeDriver driver = new ChromeDriver(options);
 		driver.get("https://chromedriver.chromium.org/contributing");
-        LoggingPreferences pre = new LoggingPreferences()
+        LoggingPreferences pre = new LoggingPreferences();
 //		
 	}
 

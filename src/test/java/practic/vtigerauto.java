@@ -16,19 +16,19 @@ public class vtigerauto {
 	public static void main(String[] args) throws InterruptedException 
 	{
 		// TODO Auto-generated method stub
-//		WebDriverManager.firefoxdriver().setup();
-//		WebDriver driver = new FirefoxDriver();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-//		driver.get("http://localhost:8888/index.php?action=index&module=Home");
-//		Thread.sleep(2000);
-//		driver.findElement(By.xpath(".//input[@name=\"user_name\"]")).sendKeys("admin");
-//		//user.click();
-//		//user.sendKeys("admin");
-//		Thread.sleep(5000);
-//		WebElement password = driver.findElement(By.xpath(".//input[@name=\"user_password\"]"));
-//		//password.click();
-//		password.sendKeys("admin");
-		Property.fileinput();
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+		driver.get("http://localhost:8888/index.php?action=index&module=Home");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(".//input[@name=\"user_name\"]")).sendKeys("admin");
+		//user.click();
+		//user.sendKeys("admin");
+		Thread.sleep(5000);
+		WebElement password = driver.findElement(By.xpath(".//input[@name=\"user_password\"]"));
+		//password.click();
+		password.sendKeys("admin");
+		//Property.fileinput();
 		driver.findElement(By.xpath(".//input[@id=\"submitButton\"]")).click();
 		driver.findElement(By.xpath(".//a[text()='Organizations']")).click();
 		Thread.sleep(5000);

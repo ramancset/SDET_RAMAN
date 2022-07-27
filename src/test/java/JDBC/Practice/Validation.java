@@ -50,10 +50,7 @@ public class Validation extends Property {
 		List<WebElement> name = driver.findElements(By.xpath(".//a[text()='Campaign Name']"));
 		
 		ArrayList<String> name3=new ArrayList<String>();
-		for(int z=0; z<name.size(); z++)
-		{
-			String name4 =  
-		}
+		
 		
 		// for  Search and delete script
 		driver.findElement(By.xpath(".//input[@name=\"search_text\"]")).sendKeys(name1);

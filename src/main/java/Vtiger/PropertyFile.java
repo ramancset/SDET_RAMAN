@@ -1,8 +1,12 @@
-package Vtiger;
+	package Vtiger;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class PropertyFile 
 {
@@ -25,7 +29,8 @@ public class PropertyFile
 			return	prop.getProperty(key);
 
 		}
-		public String readDatafromPropfile(String key, String path) throws IOException {
+		public String readDatafromPropfile(String key, String path) throws IOException 
+		{
 			FileInputStream fis = new FileInputStream(path);
 
 			Properties prop = new Properties();
@@ -33,6 +38,22 @@ public class PropertyFile
 
 			return	prop.getProperty(key);
 
+		}
+		
+		public int readDatafromExcel(String path, String sheet) throws Throwable
+		{
+			FileInputStream fis = new FileInputStream("../SDET_RAM/sheet.xlsx");
+			Workbook workbook =WorkbookFactory.create(fis);
+			Sheet s = workbook.getSheet(sheet);
+			return s.getLastRowNum();
+		}
+		
+		public String readDatafromExcel(String path, String sheet,int row ,int cell) throws Throwable
+		{
+			FileInputStream fis = new FileInputStream("../SDET_RAM/sheet.xlsx");
+			Workbook workbook =WorkbookFactory.create(fis);
+			Sheet s = workbook.getSheet(sheet);
+			return s.getRow(row).getCell(cell).toString();
 		}
 
 	}

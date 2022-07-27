@@ -31,7 +31,7 @@ public class Reports
 	//To create entries in reports
 	ExtentTest test;
 	
-	@Test y
+	@Test 
 	public  void reportCreation() throws Throwable 
 	{
 		reporter = new ExtentSparkReporter("../SDET_RAM/raman.html");
