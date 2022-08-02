@@ -3,8 +3,6 @@ package com.Vtiger.Tests;
 import org.openqa.selenium.Alert;
 
 
-
-
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
@@ -22,7 +20,7 @@ import Vtiger.WebDriverUtil;
 @Listeners(Vtiger.ListenerClass.class)
 public class CreateCampaignsAndDeleteTest extends BaseClass 
 {
-	@Test(groups= {"smoke","regration"},retryAnalyzer =Vtiger.RetryAnalyzer.class)
+	@Test(groups= "smoke",retryAnalyzer =Vtiger.RetryAnalyzer.class)
 	public  void ScriptTest4Test() throws Throwable 
 	{
 		FakerDate fake = new FakerDate();
