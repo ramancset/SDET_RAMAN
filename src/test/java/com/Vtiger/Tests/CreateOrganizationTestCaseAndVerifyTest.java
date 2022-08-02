@@ -16,7 +16,7 @@ import Vtiger.WebDriverUtil;
 @Listeners(Vtiger.ListenerClass.class)
 public class CreateOrganizationTestCaseAndVerifyTest extends BaseClass 
 {
-	@Test()
+	@Test(groups= "regration",retryAnalyzer = Vtiger.RetryAnalyzer.class)
 	public void testScriptTest2() throws Throwable 
 	{
 		
@@ -30,6 +30,7 @@ public class CreateOrganizationTestCaseAndVerifyTest extends BaseClass
 		OrganizationsPage  organizationspage = new OrganizationsPage(driver);
 		organizationspage.getOrgnametxtbox().click();
 		Thread.sleep(5000);
+		
 		
 		NewOrgCreatedPage creatingneworganization = new NewOrgCreatedPage(driver);
 		

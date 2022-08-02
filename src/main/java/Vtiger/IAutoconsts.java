@@ -8,6 +8,7 @@ public interface IAutoconsts
 	String excelpath=currentdirectory+"/sheet.xlsx";
 	String screenshotpath=currentdirectory+"/ScreenShot/";
 	String extentreportpath=currentdirectory+"/TestScriptExtentReport/Vtiger.html";
+	String screenshotfailpath=currentdirectory+"/FailTestScreenShot/";
 
 
 }

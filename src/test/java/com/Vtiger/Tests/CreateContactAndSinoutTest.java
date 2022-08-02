@@ -22,7 +22,7 @@ import Vtiger.WebDriverUtil;
 @Listeners(Vtiger.ListenerClass.class)
 public class CreateContactAndSinoutTest extends BaseClass 
 {
-	@Test(retryAnalyzer =Vtiger.RetryAnalyzer.class)
+	@Test(groups= "smoke",retryAnalyzer =Vtiger.RetryAnalyzer.class)
 	public void testScript3Test() throws Throwable 
 	{
 		
@@ -78,7 +78,7 @@ public class CreateContactAndSinoutTest extends BaseClass
 	
 		driverUtil.movelement(homepage.getSignoutlink());
 		Thread.sleep(5000);
-		Assert.assertEquals(true, true);
+		//Assert.assertEquals(true, true);
 		
 	
 		System.out.println("program complite");

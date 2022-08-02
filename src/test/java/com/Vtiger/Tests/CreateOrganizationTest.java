@@ -13,7 +13,7 @@ import Vtiger.BaseClass;
 public class CreateOrganizationTest extends BaseClass 
 {
 	
-	@Test(retryAnalyzer = Vtiger.RetryAnalyzer.class)
+	@Test(groups= "regration",retryAnalyzer = Vtiger.RetryAnalyzer.class)
 	public  void  TestScriptTest1() throws Throwable 
 	{
 		FakerDate faker = new FakerDate();
@@ -28,11 +28,14 @@ public class CreateOrganizationTest extends BaseClass
 		NewOrgCreatedPage newOrgCreatedPage= new NewOrgCreatedPage(driver);
 		newOrgCreatedPage.getOrgtextbox().sendKeys(orgname);
 		Thread.sleep(5000);
-		//Optionofsave saveoption = new Optionofsave(driver);
+		
 		newOrgCreatedPage.getOptsavimg().click();
 		
 		System.out.println("create one Organization");
+		//Assert.assertEquals(true, false);
 		Thread.sleep(5000);
+		
+	
 
 	}
 

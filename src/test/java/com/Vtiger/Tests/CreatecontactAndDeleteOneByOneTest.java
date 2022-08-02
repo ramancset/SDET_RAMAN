@@ -25,7 +25,7 @@ import Vtiger.WebDriverUtil;
 @Listeners(Vtiger.ListenerClass.class)
 public class CreatecontactAndDeleteOneByOneTest extends BaseClass
 {
-	@Test(retryAnalyzer =Vtiger.RetryAnalyzer.class)
+	@Test(groups= "smoke",retryAnalyzer =Vtiger.RetryAnalyzer.class)
 	public void ContactsTestCaseTest() throws Throwable
 	{
 		FakerDate data = new FakerDate();

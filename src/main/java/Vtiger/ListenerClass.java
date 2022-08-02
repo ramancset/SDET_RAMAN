@@ -2,8 +2,6 @@ package Vtiger;
 
 import org.testng.ITestContext;
 
-
-
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -32,14 +30,14 @@ public class ListenerClass extends BaseClass implements ITestListener {
 	{
 		test.log(Status.PASS,result.getMethod().getMethodName()+" got pass");
 		test.log(Status.PASS, result.getThrowable());
-//		String path;
-//		try {
-//			path=BaseClass.takeScreenshot(result.getMethod().getMethodName());
-//			test.addScreenCaptureFromPath(path);
-//		} catch (Exception e) {
-//
-//			e.printStackTrace();
-//		}
+		String path;
+		try {
+			path=BaseClass.takeScreenshot(result.getMethod().getMethodName());
+			test.addScreenCaptureFromPath(path);
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
 
 
 	}
@@ -54,7 +52,7 @@ public class ListenerClass extends BaseClass implements ITestListener {
 		String path;
 		try
 		{
-			path=BaseClass.takeScreenshot(result.getMethod().getMethodName());
+			path=BaseClass.takeFailScreenShot(result.getMethod().getMethodName());
 			Thread.sleep(3000);
 			test.addScreenCaptureFromPath(path);
 

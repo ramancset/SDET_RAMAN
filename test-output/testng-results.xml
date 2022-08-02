@@ -1,129 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="13" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="454080" started-at="2022-07-27T12:23:14Z" finished-at="2022-07-27T12:30:48Z">
+  <suite name="Default suite" duration-ms="33173" started-at="2022-07-29T05:39:35Z" finished-at="2022-07-29T05:40:09Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="454080" started-at="2022-07-27T12:23:14Z" finished-at="2022-07-27T12:30:48Z">
-      <class name="com.Vtiger.Tests.CreateContactAndSinoutTest">
-        <test-method status="PASS" signature="dataBaseConnection()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="dataBaseConnection" is-config="true" duration-ms="327" started-at="2022-07-27T17:53:14Z" finished-at="2022-07-27T17:53:14Z">
+    <test name="Default test" duration-ms="33173" started-at="2022-07-29T05:39:35Z" finished-at="2022-07-29T05:40:09Z">
+      <class name="practic.DynamicXpath">
+        <test-method status="FAIL" signature="name()[pri:0, instance:practic.DynamicXpath@67784306]" name="name" duration-ms="33140" started-at="2022-07-29T11:09:36Z" finished-at="2022-07-29T11:10:09Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: .//div[@class="OBMEnb"]/ul//div[@class="pcTkSc"]/div/span[text()='selenium']/b[text()=' download']For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_elementBuild info: version: '4.1.2', revision: '9a5a329c5a'System info: host: 'DESKTOP-17PQN8B', ip: '192.168.60.224', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'Driver info: org.openqa.selenium.firefox.FirefoxDriverCommand: [d9f182ca-28dc-4581-8f57-fd6af347db55, findElement {using=xpath, value=.//div[@class="OBMEnb"]/ul//div[@class="pcTkSc"]/div/span[text()='selenium']/b[text()=' download']}]Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:51391, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1528, moz:profile: C:\Users\RAMANJ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:51391/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}Session ID: d9f182ca-28dc-4581-8f57-fd6af347db55]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .//div[@class="OBMEnb"]/ul//div[@class="pcTkSc"]/div/span[text()='selenium']/b[text()=' download']For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_elementBuild info: version: '4.1.2', revision: '9a5a329c5a'System info: host: 'DESKTOP-17PQN8B', ip: '192.168.60.224', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'Driver info: org.openqa.selenium.firefox.FirefoxDriverCommand: [d9f182ca-28dc-4581-8f57-fd6af347db55, findElement {using=xpath, value=.//div[@class="OBMEnb"]/ul//div[@class="pcTkSc"]/div/span[text()='selenium']/b[text()=' download']}]Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:debuggerAddress: localhost:51391, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 1528, moz:profile: C:\Users\RAMANJ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:51391/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}Session ID: d9f182ca-28dc-4581-8f57-fd6af347db55at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)at practic.DynamicXpath.name(DynamicXpath.java:33)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataBaseConnection -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="beforeClass" is-config="true" duration-ms="6303" started-at="2022-07-27T17:53:14Z" finished-at="2022-07-27T17:53:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="beforeMethod" is-config="true" duration-ms="12875" started-at="2022-07-27T17:53:21Z" finished-at="2022-07-27T17:53:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testScript3Test()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="testScript3Test" duration-ms="50978" started-at="2022-07-27T17:53:33Z" finished-at="2022-07-27T17:54:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScript3Test -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="afterMethod" is-config="true" duration-ms="5314" started-at="2022-07-27T17:54:24Z" finished-at="2022-07-27T17:54:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="closeBrowser" is-config="true" duration-ms="4444" started-at="2022-07-27T17:54:30Z" finished-at="2022-07-27T17:54:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="afterSute()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@3dd4520b]" name="afterSute" is-config="true" duration-ms="0" started-at="2022-07-27T18:00:48Z" finished-at="2022-07-27T18:00:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSute -->
-      </class> <!-- com.Vtiger.Tests.CreateContactAndSinoutTest -->
-      <class name="com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="beforeClass" is-config="true" duration-ms="3017" started-at="2022-07-27T17:56:57Z" finished-at="2022-07-27T17:57:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="beforeMethod" is-config="true" duration-ms="11776" started-at="2022-07-27T17:57:00Z" finished-at="2022-07-27T17:57:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ContactsTestCaseTest()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="ContactsTestCaseTest" duration-ms="139044" started-at="2022-07-27T17:57:12Z" finished-at="2022-07-27T17:59:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactsTestCaseTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="afterMethod" is-config="true" duration-ms="5311" started-at="2022-07-27T17:59:31Z" finished-at="2022-07-27T17:59:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@43814d18]" name="closeBrowser" is-config="true" duration-ms="3961" started-at="2022-07-27T17:59:37Z" finished-at="2022-07-27T17:59:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest -->
-      <class name="com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="beforeClass" is-config="true" duration-ms="2990" started-at="2022-07-27T17:59:41Z" finished-at="2022-07-27T17:59:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="beforeMethod" is-config="true" duration-ms="10966" started-at="2022-07-27T17:59:44Z" finished-at="2022-07-27T17:59:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testScriptTest2()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="testScriptTest2" duration-ms="44530" started-at="2022-07-27T17:59:54Z" finished-at="2022-07-27T18:00:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScriptTest2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="afterMethod" is-config="true" duration-ms="5301" started-at="2022-07-27T18:00:39Z" finished-at="2022-07-27T18:00:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest@5c5a1b69]" name="closeBrowser" is-config="true" duration-ms="3721" started-at="2022-07-27T18:00:44Z" finished-at="2022-07-27T18:00:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Vtiger.Tests.CreateOrganizationTestCaseAndVerifyTest -->
-      <class name="com.Vtiger.Tests.CreateCampaignsAndDeleteTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="beforeClass" is-config="true" duration-ms="2907" started-at="2022-07-27T17:55:29Z" finished-at="2022-07-27T17:55:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="beforeMethod" is-config="true" duration-ms="11904" started-at="2022-07-27T17:55:32Z" finished-at="2022-07-27T17:55:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ScriptTest4Test()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="ScriptTest4Test" duration-ms="63872" started-at="2022-07-27T17:55:44Z" finished-at="2022-07-27T17:56:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScriptTest4Test -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="afterMethod" is-config="true" duration-ms="5327" started-at="2022-07-27T17:56:48Z" finished-at="2022-07-27T17:56:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@610694f1]" name="closeBrowser" is-config="true" duration-ms="4335" started-at="2022-07-27T17:56:53Z" finished-at="2022-07-27T17:56:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Vtiger.Tests.CreateCampaignsAndDeleteTest -->
-      <class name="com.Vtiger.Tests.CreateOrganizationTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="beforeClass" is-config="true" duration-ms="3156" started-at="2022-07-27T17:54:34Z" finished-at="2022-07-27T17:54:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="beforeMethod" is-config="true" duration-ms="11781" started-at="2022-07-27T17:54:37Z" finished-at="2022-07-27T17:54:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TestScriptTest1()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="TestScriptTest1" duration-ms="30221" started-at="2022-07-27T17:54:49Z" finished-at="2022-07-27T17:55:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestScriptTest1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="afterMethod" is-config="true" duration-ms="5328" started-at="2022-07-27T17:55:19Z" finished-at="2022-07-27T17:55:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateOrganizationTest@5ae63ade]" name="closeBrowser" is-config="true" duration-ms="4425" started-at="2022-07-27T17:55:25Z" finished-at="2022-07-27T17:55:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Vtiger.Tests.CreateOrganizationTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- name -->
+      </class> <!-- practic.DynamicXpath -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

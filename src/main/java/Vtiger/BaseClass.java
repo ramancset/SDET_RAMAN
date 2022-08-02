@@ -39,7 +39,7 @@ public class BaseClass
 	PropertyFile prop = PropertyFile.getObjectPropfile();
 	Connection con=null;
 	WebDriverUtil util;
-	@BeforeSuite
+	@BeforeSuite(groups= {"smoke","regration"})
 	public void dataBaseConnection() throws Throwable
 	{
 		Driver driver= new Driver();
@@ -54,7 +54,7 @@ public class BaseClass
 
 
 	}
-	@BeforeClass
+	@BeforeClass(groups= {"smoke","regration"})
 	public void beforeClass() throws Throwable
 	{
 		String BROWSER = prop.readDatafromPropfile("browser");
@@ -70,14 +70,14 @@ public class BaseClass
 		{
 			System.out.println("Invalid input");
 		}
+		driver.get(prop.readDatafromPropfile("url"));
+		Thread.sleep(2000);
 		sdriver=driver;
 		util = new WebDriverUtil(driver);
 	}
-	@BeforeMethod
+	@BeforeMethod(groups= {"smoke","regration"})
 	public void beforeMethod() throws Throwable
 	{
-
-		driver.get(prop.readDatafromPropfile("url"));
 		Thread.sleep(2000);
 
 		LoginPage loginpage= new LoginPage(driver);
@@ -88,7 +88,7 @@ public class BaseClass
 
 	}
 
-	@AfterMethod
+	@AfterMethod(groups= {"smoke","regration"})
 	public void afterMethod() throws Throwable
 	{	
 		util = new WebDriverUtil(driver);
@@ -100,7 +100,7 @@ public class BaseClass
 
 	}
 
-	@AfterClass
+	@AfterClass(groups= {"smoke","regration"})
 	public void closeBrowser() throws InterruptedException{
 				Thread.sleep(3000);
 			    driver.quit();
@@ -121,14 +121,14 @@ public class BaseClass
 	}
 
 
-	//	public static String takeScreenShot(String name) throws IOException
-	//	{
-	//		TakesScreenshot shot =(TakesScreenshot)BaseClass.sdriver;
-	//		File file = shot.getScreenshotAs(OutputType.FILE);
-	//		String screenshot = "../SDET_RAM/screnshot/"+name+".png";
-	//		File f1= new File(screenshot);
-	//		FileUtils.copyFile(file, f1);
-	//		
-	//		return screenshot;
-	//	}
+		public static String takeFailScreenShot(String name) throws IOException
+		{
+			TakesScreenshot shot =(TakesScreenshot)BaseClass.sdriver;
+			File file = shot.getScreenshotAs(OutputType.FILE);
+			String path = IAutoconsts.screenshotfailpath+name+".png";
+			File f1= new File(path);
+			Files.copy(file, f1);
+			
+			return path;
+		}
 }
