@@ -12,7 +12,7 @@ public class LoginPage
 	{
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy(name="user_name")
+	@FindBy(xpath="//input[@name='user_name']")
 	private WebElement usernametextbox;
 	@FindBy(xpath="//input[@name='user_password']")
 	private WebElement passwordtextbox;
