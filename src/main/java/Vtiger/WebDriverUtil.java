@@ -55,7 +55,7 @@ public class WebDriverUtil
 	public void slectClass(WebElement locator,String Value)
 	{
 		Select s = new Select(locator);
-		s.selectByVisibleText("raman");
+		s.selectByVisibleText(Value);
 	}
 	public int randomClass()
 	{

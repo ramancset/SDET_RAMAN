@@ -1,89 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="9" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="338944" started-at="2022-08-02T12:06:59Z" finished-at="2022-08-02T12:12:38Z">
+  <suite name="Default suite" duration-ms="8851" started-at="2022-08-27T14:18:07Z" finished-at="2022-08-27T14:18:16Z">
     <groups>
-      <group name="regration">
-        <method signature="CreateCampaignsAndDeleteTest.ScriptTest4Test()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@3701eaf6]" name="ScriptTest4Test" class="com.Vtiger.Tests.CreateCampaignsAndDeleteTest"/>
-      </group> <!-- regration -->
-      <group name="smoke">
-        <method signature="CreateCampaignsAndDeleteTest.ScriptTest4Test()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@3701eaf6]" name="ScriptTest4Test" class="com.Vtiger.Tests.CreateCampaignsAndDeleteTest"/>
-        <method signature="CreateContactAndSinoutTest.testScript3Test()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@5c5a1b69]" name="testScript3Test" class="com.Vtiger.Tests.CreateContactAndSinoutTest"/>
-        <method signature="CreatecontactAndDeleteOneByOneTest.ContactsTestCaseTest()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@627551fb]" name="ContactsTestCaseTest" class="com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="338944" started-at="2022-08-02T12:06:59Z" finished-at="2022-08-02T12:12:38Z">
-      <class name="com.Vtiger.Tests.CreateContactAndSinoutTest">
-        <test-method status="PASS" signature="dataBaseConnection()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@5c5a1b69]" name="dataBaseConnection" is-config="true" duration-ms="278" started-at="2022-08-02T17:36:59Z" finished-at="2022-08-02T17:36:59Z">
+    <test name="Default test" duration-ms="8851" started-at="2022-08-27T14:18:07Z" finished-at="2022-08-27T14:18:16Z">
+      <class name="practic.SwitchtToWindow">
+        <test-method status="PASS" signature="ebay()[pri:0, instance:practic.SwitchtToWindow@67784306]" name="ebay" duration-ms="8826" started-at="2022-08-27T19:48:07Z" finished-at="2022-08-27T19:48:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataBaseConnection -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@5c5a1b69]" name="beforeClass" is-config="true" duration-ms="8739" started-at="2022-08-02T17:37:00Z" finished-at="2022-08-02T17:37:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@5c5a1b69]" name="beforeMethod" is-config="true" duration-ms="10483" started-at="2022-08-02T17:37:08Z" finished-at="2022-08-02T17:37:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testScript3Test()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@5c5a1b69]" name="testScript3Test" duration-ms="48437" started-at="2022-08-02T17:37:19Z" finished-at="2022-08-02T17:38:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScript3Test -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@5c5a1b69]" name="afterMethod" is-config="true" duration-ms="5316" started-at="2022-08-02T17:38:07Z" finished-at="2022-08-02T17:38:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateContactAndSinoutTest@5c5a1b69]" name="closeBrowser" is-config="true" duration-ms="3982" started-at="2022-08-02T17:38:13Z" finished-at="2022-08-02T17:38:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Vtiger.Tests.CreateContactAndSinoutTest -->
-      <class name="com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@627551fb]" name="beforeClass" is-config="true" duration-ms="6618" started-at="2022-08-02T17:39:46Z" finished-at="2022-08-02T17:39:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@627551fb]" name="beforeMethod" is-config="true" duration-ms="11312" started-at="2022-08-02T17:39:53Z" finished-at="2022-08-02T17:40:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ContactsTestCaseTest()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@627551fb]" name="ContactsTestCaseTest" duration-ms="143522" started-at="2022-08-02T17:40:04Z" finished-at="2022-08-02T17:42:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactsTestCaseTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@627551fb]" name="afterMethod" is-config="true" duration-ms="5280" started-at="2022-08-02T17:42:28Z" finished-at="2022-08-02T17:42:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest@627551fb]" name="closeBrowser" is-config="true" duration-ms="4769" started-at="2022-08-02T17:42:33Z" finished-at="2022-08-02T17:42:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Vtiger.Tests.CreatecontactAndDeleteOneByOneTest -->
-      <class name="com.Vtiger.Tests.CreateCampaignsAndDeleteTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@3701eaf6]" name="beforeClass" is-config="true" duration-ms="7298" started-at="2022-08-02T17:38:17Z" finished-at="2022-08-02T17:38:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@3701eaf6]" name="beforeMethod" is-config="true" duration-ms="10353" started-at="2022-08-02T17:38:24Z" finished-at="2022-08-02T17:38:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ScriptTest4Test()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@3701eaf6]" name="ScriptTest4Test" duration-ms="61709" started-at="2022-08-02T17:38:34Z" finished-at="2022-08-02T17:39:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScriptTest4Test -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@3701eaf6]" name="afterMethod" is-config="true" duration-ms="5327" started-at="2022-08-02T17:39:36Z" finished-at="2022-08-02T17:39:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.Vtiger.Tests.CreateCampaignsAndDeleteTest@3701eaf6]" name="closeBrowser" is-config="true" duration-ms="4673" started-at="2022-08-02T17:39:42Z" finished-at="2022-08-02T17:39:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Vtiger.Tests.CreateCampaignsAndDeleteTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- ebay -->
+      </class> <!-- practic.SwitchtToWindow -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

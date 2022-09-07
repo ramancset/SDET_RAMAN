@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class AssertClass 
 {
-	@Test
+	@Test(enabled = false)
 	public void assertTest()
 	{
 		// we can write at lest one assert in one test script
